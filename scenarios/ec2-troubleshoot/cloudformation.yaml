@@ -1,0 +1,47 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "EC2 Troubleshooting Scenario for AWS Cloud Support Portfolio (us-east-2)"
+
+Parameters:
+  DefaultVPC:
+    Type: AWS::EC2::VPC::Id
+    Description: "The VPC ID to launch resources in"
+
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: "Existing EC2 KeyPair for SSH access"
+
+Resources:
+  EC2SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "Security Group for EC2 troubleshooting portfolio"
+      VpcId: !Ref DefaultVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0       # Allow SSH
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0d5d9d301c853a04a    # Amazon Linux 2 in us-east-2
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - !Ref EC2SecurityGroup
+      Tags:
+        - Key: Name
+          Value: EC2-Troubleshoot-Portfolio
+
+Outputs:
+  EC2PublicIP:
+    Description: "Public IP of the EC2 instance"
+    Value: !GetAtt EC2Instance.PublicIp
+
+  SecurityGroupID:
+    Description: "Security Group ID"
+    Value: !Ref EC2SecurityGroup
