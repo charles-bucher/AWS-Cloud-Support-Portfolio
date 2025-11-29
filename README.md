@@ -120,3 +120,11 @@ Screenshots show reproducible steps and validated fixes
 
 Topics / Keywords: terraform, incident-response, cloudwatch, ci-cd, infrastructure-as-code, aws-security, noc, security-automation, devsecops, cloudops, cloud-support, python-automation, aws-guardduty
 
+
+## ??? Diagrams from Diagrams
+
+![](Diagrams/AWS Support Flow Diagram.png)
+
+![](Diagrams/Workflow.png)
+
+
