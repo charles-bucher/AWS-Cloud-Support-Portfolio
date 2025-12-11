@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  GuardDuty Automation Scenario - Hands-on practice for AWS portfolio.
+  Sets up a sample GuardDuty detector and an optional IAM role for automation.
+
+Resources:
+  # GuardDuty Detector
+  GuardDutyDetector:
+    Type: AWS::GuardDuty::Detector
+    Properties:
+      Enable: true
+
+  # Optional IAM Role for automation scripts
+  GuardDutyRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: GuardDutyAutomationRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: [lambda.amazonaws.com]
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AdministratorAccess
+
+Outputs:
+  GuardDutyDetectorID:
+    Description: "ID of the GuardDuty Detector"
+    Value: !Ref GuardDutyDetector
+
+  GuardDutyRoleName:
+    Description: "Name of IAM role for automation scripts"
+    Value: !Ref GuardDutyRole

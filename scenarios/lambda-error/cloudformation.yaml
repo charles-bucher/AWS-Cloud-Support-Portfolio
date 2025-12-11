@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Lambda Error Handling Scenario - Hands-on practice for AWS portfolio.
+  Deploys a sample Lambda function to simulate errors and test troubleshooting.
+
+Parameters:
+  LambdaFunctionName:
+    Type: String
+    Default: LambdaErrorTest
+    Description: "Name of the Lambda function"
+
+Resources:
+  TestLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Ref LambdaFunctionName
+      Handler: index.handler
+      Role: arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Runtime: python3.9
+      Code:
+        ZipFile: |
+          def handler(event, context):
+              # Intentional error for testing
+              x = 1 / 0
+              return {"status": "done"}
+
+Outputs:
+  LambdaFunctionName:
+    Description: "Name of Lambda function"
+    Value: !Ref TestLambdaFunction

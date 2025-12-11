@@ -1,54 +1,54 @@
-# EC2 Troubleshooting Scenario Instructions
+# EC2 Troubleshooting - Honest Hands-On Instructions
 
-## Objective
-Demonstrate your ability to diagnose and resolve common AWS EC2 instance issues, including connectivity, service failures, and resource configuration problems.
+## Goal
+This is real hands-on troubleshooting — find out why an EC2 instance isn’t behaving and fix it.  
+You will see things break, that’s normal — documenting it is key.
 
-## Scenario
-An EC2 instance is not functioning as expected. It could be failing to start, be unreachable via SSH/RDP, or have application/service issues. Your task is to identify the root cause and implement a fix.
+---
 
-## Tasks
+## What You Need
+- AWS account with EC2 and IAM access
+- KeyPair for SSH
+- Instance launched using this CloudFormation template
+- AWS CLI configured
 
-1. **Setup**
-   - Ensure your AWS CLI is configured with permissions to manage EC2 instances.
-   - Identify the target EC2 instance by Instance ID or Name Tag.
+---
 
-2. **Identify the Problem**
-   - Check instance state in the AWS Console or CLI:
-     ```bash
-     aws ec2 describe-instances --instance-ids <instance-id>
-     ```
-   - Look for common issues:
-     - Instance stuck in `pending` or `stopping` state.
-     - System or instance status checks failing.
-     - Misconfigured security groups or network ACLs.
+## Steps
 
-3. **Connectivity Troubleshooting**
-   - Verify security group rules allow SSH (port 22) or RDP (port 3389) access from your IP.
-   - Check the instance’s public/private IP and subnet routing.
-   - Use the EC2 Serial Console (if enabled) for boot-level troubleshooting.
+1. **Check EC2 Status**
+   - Go to EC2 > Instances
+   - Confirm instance is running
+   - If stopped: start it and see why it stopped
 
-4. **Application/Service Troubleshooting**
-   - SSH or RDP into the instance if possible.
-   - Check system logs for errors:
-     ```bash
-     sudo tail -n 100 /var/log/syslog       # Linux
-     Get-EventLog -LogName System           # Windows PowerShell
-     ```
-   - Restart failed services or check configuration files as needed.
+2. **Test SSH Access**
+   - Attempt to SSH using the key
+   - If it fails:
+     - Check Security Group inbound rules
+     - Confirm instance is in correct subnet/VPC
+     - Make sure KeyPair matches instance
 
-5. **Resource or Configuration Issues**
-   - Verify EBS volume attachments and space usage.
-   - Check IAM roles attached to the instance if accessing other AWS resources.
-   - Ensure OS updates or firewall settings are not causing failures.
+3. **Check Security Groups**
+   - Verify inbound allows SSH
+   - Check outbound rules aren’t blocking traffic
 
-6. **Fix the Issue**
-   - Apply the necessary corrections (security group changes, restarting services, adjusting IAM role, etc.).
-   - Validate that the EC2 instance becomes reachable and services operate normally.
+4. **Verify Route Tables**
+   - Public subnet → Internet Gateway
+   - Private subnet → NAT if needed
+   - Check connectivity using ping or curl
 
-7. **Documentation**
-   - Summarize the initial problem, diagnostic steps, root cause, and the solution.
-   - Include screenshots or command outputs where applicable to demonstrate troubleshooting steps.
+5. **Check System Logs**
+   - EC2 > Actions > Get System Log
+   - Look for errors, failed services, or startup problems
 
-## Notes
-- This scenario is meant to demonstrate hands-on EC2 troubleshooting skills for your portfolio.
-- Clear documentation of both the problem and the fix is critical for recruiters or interviewers to understand your process.
+6. **Document Everything**
+   - Take screenshots of instance status
+   - Note what failed and how you fixed it
+   - Be honest — mistakes are expected
+
+---
+
+## Deliverables
+- Screenshot of instance running
+- Screenshot of successful SSH or notes if failed
+- `ec2-troubleshoot.txt` documenting problems and fixes

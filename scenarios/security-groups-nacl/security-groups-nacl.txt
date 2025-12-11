@@ -1,0 +1,18 @@
+Security Groups & NACLs - Honest Notes
+
+1. Deployment
+- SG and NACL created? [Yes/No]
+- Any errors? [Notes]
+
+2. Connectivity Test
+- SSH blocked? [Yes/No]
+- HTTP blocked? [Yes/No]
+
+3. Troubleshooting
+- What caused the blockage? [Notes]
+- Changes applied? [Notes]
+
+4. Lessons Learned
+- What broke first? [Notes]
+- How did I fix it? [Notes]
+- Key takeaways: [Notes]

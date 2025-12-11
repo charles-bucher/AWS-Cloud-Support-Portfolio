@@ -1,0 +1,27 @@
+GuardDuty Automation Notes - Honest Version
+
+Goal:
+Practice detecting and automating responses to GuardDuty findings. Document real outcomes.
+
+---
+
+1. GuardDuty Detector
+- Was the detector created successfully? [Yes/No]
+- Any issues enabling GuardDuty? [Notes]
+
+2. Findings
+- Were any findings detected during simulation? [Yes/No]
+- What triggered the findings? [Notes]
+- Any issues viewing findings? [Notes]
+
+3. Automation Script
+- Did Boto3 script run successfully? [Yes/No]
+- Permissions issues? [Notes]
+- Any bugs encountered? [Notes]
+
+4. Lessons Learned
+- What broke first? [Notes]
+- How did I troubleshoot? [Notes]
+- What worked well? [Notes]
+
+> Keep it honest — showing problem-solving is more important than pretending everything worked.

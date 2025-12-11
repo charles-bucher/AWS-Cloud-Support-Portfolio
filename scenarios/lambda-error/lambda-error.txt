@@ -1,0 +1,18 @@
+Lambda Error Scenario - Honest Notes
+
+1. Deployment
+- Lambda created successfully? [Yes/No]
+- Any CloudFormation issues? [Notes]
+
+2. Triggering
+- Did function fail as expected? [Yes/No]
+- Error message from CloudWatch Logs: [Notes]
+
+3. Troubleshooting
+- How did I debug? [Notes]
+- Code changes applied? [Notes]
+
+4. Lessons Learned
+- What broke first? [Notes]
+- How did I fix it? [Notes]
+- What would I do differently next time? [Notes]

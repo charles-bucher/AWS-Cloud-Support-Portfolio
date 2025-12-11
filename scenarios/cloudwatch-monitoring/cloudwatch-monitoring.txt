@@ -1,0 +1,54 @@
+CloudWatch Monitoring Scenario - Real Troubleshooting Notes
+
+Goal:
+Practice monitoring AWS resources, see what breaks, and learn how to fix it. This is real hands-on work for my portfolio.
+
+---
+
+1. Check EC2 Metrics
+- Go to CloudWatch Metrics > EC2
+- Look for CPUUtilization and StatusCheckFailed
+- If nothing shows up:
+  - Maybe the instance isn’t running
+  - Wrong region selected
+  - Or IAM permissions aren’t correct
+- Notes: [Add what you found]
+
+2. Validate CPU Alarm
+- Go to Alarms > All Alarms
+- Confirm CPU > 70% alarm exists
+- If it doesn’t trigger:
+  - Check instance ID in Dimensions
+  - Check threshold and evaluation period
+  - Generate CPU load manually (stress test)
+- Notes: [Add what triggered, or didn’t]
+
+3. Notifications (if configured)
+- Check SNS or email notifications
+- If nothing comes:
+  - Alarm might not have AlarmActions set
+  - Subscription to SNS topic could be missing
+  - Emails may be in spam
+- Notes: [Add what you observed]
+
+4. Dashboard Check
+- Open CloudWatch Dashboard
+- Make sure CPU, Status Checks, Network metrics are visible
+- If metrics missing:
+  - Wrong instance or region
+  - Metrics haven’t published yet
+- Notes: [Add your dashboard observations]
+
+5. Lessons Learned
+- Metrics take a minute or two to show — don’t panic
+- Load testing helps alarms trigger
+- Document everything honestly — both successes and failures
+- Notes: [Write what you struggled with, what you fixed, and what you learned]
+
+---
+
+Deliverables for Portfolio
+- Screenshot of triggered alarms
+- Screenshot of dashboard
+- Notes above filled in honestly
+- Keep track of mistakes and troubleshooting steps — that’s what matters to recruiters

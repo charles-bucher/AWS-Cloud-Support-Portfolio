@@ -1,0 +1,18 @@
+VPC Architecture - Honest Notes
+
+1. Deployment
+- VPC, Subnet, IGW created? [Yes/No]
+- Any CloudFormation errors? [Notes]
+
+2. Connectivity Test
+- EC2 could reach Internet? [Yes/No]
+- Issues encountered? [Notes]
+
+3. Troubleshooting
+- What was misconfigured? [Notes]
+- Steps taken to fix? [Notes]
+
+4. Lessons Learned
+- First thing that broke? [Notes]
+- How did I debug? [Notes]
+- Key takeaways for next time? [Notes]

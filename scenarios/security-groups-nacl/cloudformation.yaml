@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Security Groups & NACL Scenario - Hands-on for AWS portfolio.
+  Creates a sample security group and network ACL to test connectivity issues.
+
+Parameters:
+  VPCID:
+    Type: AWS::EC2::VPC::Id
+    Description: "VPC for SG and NACL"
+
+Resources:
+  TestSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "SG for testing"
+      VpcId: !Ref VPCID
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+
+  TestNetworkACL:
+    Type: AWS::EC2::NetworkAcl
+    Properties:
+      VpcId: !Ref VPCID
+
+Outputs:
+  SecurityGroupID:
+    Description: "SG ID"
+    Value: !Ref TestSecurityGroup
+
+  NetworkACLID:
+    Description: "NACL ID"
+    Value: !Ref TestNetworkACL

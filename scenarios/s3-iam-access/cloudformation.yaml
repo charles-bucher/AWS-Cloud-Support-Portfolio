@@ -1,0 +1,39 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  S3 IAM Access Scenario - Hands-on portfolio practice.
+  Creates S3 bucket and IAM role with restricted permissions to troubleshoot access.
+
+Parameters:
+  BucketName:
+    Type: String
+    Default: s3-iam-test-bucket
+    Description: "Name of S3 bucket"
+
+Resources:
+  TestBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+
+  TestIAMRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: S3IAMTestRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: [ec2.amazonaws.com]
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+
+Outputs:
+  BucketName:
+    Description: "S3 Bucket Name"
+    Value: !Ref TestBucket
+
+  IAMRoleName:
+    Description: "IAM Role Name"
+    Value: !Ref TestIAMRole

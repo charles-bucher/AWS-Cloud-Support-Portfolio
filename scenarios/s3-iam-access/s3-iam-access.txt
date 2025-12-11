@@ -1,0 +1,18 @@
+S3 IAM Access - Honest Notes
+
+1. Bucket Creation
+- Bucket created successfully? [Yes/No]
+- Any CloudFormation errors? [Notes]
+
+2. Access Test
+- Was access allowed initially? [Yes/No]
+- Errors encountered? [Notes]
+
+3. Troubleshooting
+- Policy changes made? [Notes]
+- Steps to fix access? [Notes]
+
+4. Lessons Learned
+- What was confusing? [Notes]
+- How did I fix it? [Notes]
+- What will I remember for next time? [Notes]

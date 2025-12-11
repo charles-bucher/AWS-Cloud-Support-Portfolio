@@ -1,0 +1,73 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  CloudWatch Monitoring Scenario - Hands-on practice for my AWS portfolio.
+  Spins up an EC2 instance and a sample CPU alarm. This is for learning
+  and testing, not production.
+
+Parameters:
+  DefaultVPC:
+    Type: AWS::EC2::VPC::Id
+    Description: "The VPC ID where the instance will be launched"
+
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: "Your existing EC2 KeyPair for SSH access"
+
+Resources:
+  # Security Group - SSH only, nothing fancy
+  EC2SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "Security group for CloudWatch monitoring scenario"
+      VpcId: !Ref DefaultVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0  # Only SSH for testing
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0  # All outbound allowed
+
+  # EC2 instance to monitor
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0c02fb55956c7d316  # Amazon Linux 2 in us-east-1
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - !Ref EC2SecurityGroup
+      Tags:
+        - Key: Name
+          Value: CloudWatch-Monitoring-Test
+
+  # Sample CPU alarm
+  CPUAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: "Triggers if CPU > 70% for testing purposes"
+      Namespace: AWS/EC2
+      MetricName: CPUUtilization
+      Dimensions:
+        - Name: InstanceId
+          Value: !Ref EC2Instance
+      Statistic: Average
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 70
+      ComparisonOperator: GreaterThanThreshold
+      AlarmActions: []  # Optional: add SNS Topic ARN if you want notifications
+
+Outputs:
+  EC2PublicIP:
+    Description: "Public IP of the EC2 instance for SSH access"
+    Value: !GetAtt EC2Instance.PublicIp
+
+  SecurityGroupID:
+    Description: "Security Group ID"
+    Value: !Ref EC2SecurityGroup
+
+  CPUAlarmName:
+    Description: "Name of the CPU alarm"
+    Value: !Ref CPUAlarm
