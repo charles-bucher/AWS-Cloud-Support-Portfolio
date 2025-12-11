@@ -1,5 +1,4 @@
-﻿# Ignore common files
-*.log
-*.tmp
-*.env
-node_modules/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
