@@ -20,6 +20,13 @@
 
 ---
 
+## 🏗️ Architecture Overview
+
+![AWS Cloud Support Architecture](Diagrams/AWS_Cloud_Support_Diagram.png)
+*Complete cloud support simulation architecture showing VPC, EC2, Lambda, S3, GuardDuty, and troubleshooting scenarios*
+
+---
+
 ## 📸 Real AWS Infrastructure - Screenshots
 
 ### 1. VPC Setup & Architecture
@@ -62,6 +69,7 @@ I'm **Charles**, a 40-year-old self-taught cloud engineer with a delivery driver
 
 **What makes this different:**
 - ✅ **Real AWS infrastructure** deployed and running (see screenshots above)
+- ✅ **Complete architecture diagram** showing all components
 - ❌ Environments are **intentionally broken** to practice troubleshooting
 - 🔍 Shows **my actual troubleshooting process** step-by-step
 - 📝 Includes **root cause analysis** for each issue
@@ -88,6 +96,8 @@ Remote cloud support roles care more about your troubleshooting ability than cre
 | ✅ 7 | IAM permission denied | Policy attachments | IAM, Debugging | [View IAM](screenshots/ACSS_07_IAM_Roles_Policies.PNG) |
 | ✅ 8 | VPC subnet communication | NACL rules | NACLs, Network | [View NACLs](screenshots/ACSS_03_SecurityGroups_NACLs.png) |
 
+**[View Full Architecture Diagram](Diagrams/AWS_Cloud_Support_Diagram.png)**
+
 ### In Progress (1)
 
 | # | Problem | Status |
@@ -112,6 +122,10 @@ Remote cloud support roles care more about your troubleshooting ability than cre
 Customer Report: "My EC2 instance can't reach the internet. 
 Instance ID: i-0abc123. Please help ASAP."
 ```
+
+### Architecture Context
+
+![Full Architecture](Diagrams/AWS_Cloud_Support_Diagram.png)
 
 ### My Investigation Process
 
@@ -198,7 +212,11 @@ Monitoring: CloudWatch, CloudWatch Logs
 IaC:        CloudFormation, Terraform
 ```
 
-![My AWS Infrastructure](screenshots/ACSS_01_VPC_Setup.png)
+**Architecture Reference:**
+
+![My AWS Infrastructure](Diagrams/AWS_Cloud_Support_Diagram.png)
+
+![VPC Details](screenshots/ACSS_01_VPC_Setup.png)
 
 ### Python Automation Example
 
@@ -314,7 +332,16 @@ AWS_Cloud_Support_Sim/
 │   ├── analyze_iam_policies.py
 │   └── monitor_cloudwatch.py
 ├── Diagrams/              # Architecture diagrams
+│   └── AWS_Cloud_Support_Diagram.png
 ├── screenshots/           # Visual documentation (8 screenshots)
+│   ├── ACSS_01_VPC_Setup.png
+│   ├── ACSS_02_Subnets_RouteTables.PNG
+│   ├── ACSS_03_SecurityGroups_NACLs.png
+│   ├── ACSS_04_Git-Branch-Merge-Workflow.png
+│   ├── ACSS_05_Python-Boto3-GuardDuty-Findings-Automation.png
+│   ├── ACSS_06_S3_Buckets.PNG
+│   ├── ACSS_07_IAM_Roles_Policies.PNG
+│   └── ACSS_08_Service_Health.PNG
 ├── main.py               # Scenario launcher
 ├── main.tf               # Terraform infrastructure
 ├── requirements.txt      # Python dependencies
@@ -327,6 +354,7 @@ AWS_Cloud_Support_Sim/
 
 ### Current Status (December 2024)
 - ✅ 8 scenarios completed and documented
+- ✅ Complete architecture diagram created
 - ✅ 8 professional screenshots captured
 - ✅ 15+ automation scripts written
 - ✅ 500+ hours invested in self-learning
@@ -364,6 +392,7 @@ AWS_Cloud_Support_Sim/
 - Resume lists technologies
 
 ### What I Can Show:
+- ✅ **Complete architecture diagram** of my AWS implementation
 - ✅ **8 documented troubleshooting cases** with real AWS screenshots
 - ✅ **15+ automation scripts** solving actual AWS problems
 - ✅ **Systematic troubleshooting approach** (not guessing)
@@ -371,7 +400,10 @@ AWS_Cloud_Support_Sim/
 - ✅ **Clear visual documentation** showing communication skills
 - ✅ **Self-taught** proving I can learn independently
 
+![Example: Complete Architecture](Diagrams/AWS_Cloud_Support_Diagram.png)
+
 ![Example: IAM Configuration](screenshots/ACSS_07_IAM_Roles_Policies.PNG)
+
 ![Example: Security Groups](screenshots/ACSS_03_SecurityGroups_NACLs.png)
 
 ### Soft Skills from Non-Tech Background:
@@ -482,7 +514,7 @@ If you're:
 
 ---
 
-**Last Updated:** December 13, 2025 
+**Last Updated:** December 13, 2024  
 **Repository Status:** Actively maintained (updated weekly)  
 **Job Search Status:** Actively applying, ready to interview
 
