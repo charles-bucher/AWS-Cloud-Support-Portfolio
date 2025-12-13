@@ -15,8 +15,44 @@
 
 - **What:** AWS troubleshooting lab with intentionally broken scenarios  
 - **Why:** Build real support skills, not just tutorial knowledge  
-- **Status:** 8 complete scenarios, actively building more  
+- **Status:** 8 complete scenarios with real AWS implementations  
 - **Goal:** Land remote Cloud Support Engineer role ($60k-80k)
+
+---
+
+## 📸 Real AWS Infrastructure - Screenshots
+
+### 1. VPC Setup & Architecture
+![VPC Setup](screenshots/ACSS_01_VPC_Setup.png)
+*Complete VPC configuration with subnets, internet gateway, and routing*
+
+### 2. Subnets & Route Tables
+![Subnets and Route Tables](screenshots/ACSS_02_Subnets_RouteTables.PNG)
+*Public/private subnet configuration with custom route tables for multi-tier architecture*
+
+### 3. Security Groups & Network ACLs
+![Security Groups and NACLs](screenshots/ACSS_03_SecurityGroups_NACLs.png)
+*Security group rules and Network ACLs controlling inbound/outbound traffic*
+
+### 4. Professional Git Workflow
+![Git Branch-Merge Workflow](screenshots/ACSS_04_Git-Branch-Merge-Workflow.png)
+*Git branching strategy with feature branches, pull requests, and code reviews*
+
+### 5. Python Boto3 Automation - GuardDuty Findings
+![GuardDuty Automation](screenshots/ACSS_05_Python-Boto3-GuardDuty-Findings-Automation.png)
+*Python script automating GuardDuty security findings analysis and incident response*
+
+### 6. S3 Bucket Configuration
+![S3 Buckets](screenshots/ACSS_06_S3_Buckets.PNG)
+*S3 bucket policies, versioning, encryption, and access control configurations*
+
+### 7. IAM Roles & Policies
+![IAM Configuration](screenshots/ACSS_07_IAM_Roles_Policies.PNG)
+*Least-privilege IAM roles and policies for secure cloud operations*
+
+### 8. Service Health & Monitoring
+![Service Health Dashboard](screenshots/ACSS_08_Service_Health.PNG)
+*CloudWatch monitoring, alarms, and AWS service health status tracking*
 
 ---
 
@@ -25,11 +61,12 @@
 I'm **Charles**, a 40-year-old self-taught cloud engineer with a delivery driver background, transitioning into cloud support. Instead of just saying "I know AWS," I built this portfolio to **prove** I can troubleshoot real production issues.
 
 **What makes this different:**
-- ❌ Environments are **intentionally broken** (not tutorials)
-- 🔍 Shows **my actual troubleshooting process**
+- ✅ **Real AWS infrastructure** deployed and running (see screenshots above)
+- ❌ Environments are **intentionally broken** to practice troubleshooting
+- 🔍 Shows **my actual troubleshooting process** step-by-step
 - 📝 Includes **root cause analysis** for each issue
-- 🛠️ Contains **Python automation scripts** I wrote
-- 📊 Documented with step-by-step walkthroughs
+- 🛠️ Contains **Python automation scripts** I wrote using Boto3
+- 📊 **Professional Git workflow** with feature branches and PRs
 
 **Why I built this:**  
 Remote cloud support roles care more about your troubleshooting ability than credentials. This portfolio shows hiring managers I can solve real incidents from day one.
@@ -40,16 +77,16 @@ Remote cloud support roles care more about your troubleshooting ability than cre
 
 ### Completed Scenarios (8/15)
 
-| # | Problem | What I Fixed | Skills Used |
-|---|---------|--------------|-------------|
-| ✅ 1 | EC2 can't reach internet | Found missing route to IGW | VPC, Route Tables, Networking |
-| ✅ 2 | S3 bucket denies access | Fixed IAM policy + bucket policy | IAM, S3, Least Privilege |
-| ✅ 3 | Lambda times out | Added VPC endpoint for S3 | Lambda, VPC, Endpoints |
-| ✅ 4 | Security group blocks SSH | Identified removed port 22 rule | Security Groups, CloudTrail |
-| ✅ 5 | GuardDuty security alert | Investigated unauthorized API calls | GuardDuty, Incident Response |
-| ✅ 6 | CloudWatch false alarms | Adjusted metric thresholds | CloudWatch, Monitoring |
-| ✅ 7 | IAM permission denied | Debugged policy attachments | IAM, Policy Troubleshooting |
-| ✅ 8 | VPC subnet can't communicate | Fixed NACL inbound/outbound rules | NACLs, Network Isolation |
+| # | Problem | What I Fixed | Skills Used | Screenshot |
+|---|---------|--------------|-------------|------------|
+| ✅ 1 | EC2 can't reach internet | Missing route to IGW | VPC, Route Tables | [View VPC](screenshots/ACSS_01_VPC_Setup.png) |
+| ✅ 2 | S3 bucket denies access | IAM + bucket policies | IAM, S3, Policies | [View S3](screenshots/ACSS_06_S3_Buckets.PNG) |
+| ✅ 3 | Lambda times out | VPC endpoint for S3 | Lambda, VPC | [View Routes](screenshots/ACSS_02_Subnets_RouteTables.PNG) |
+| ✅ 4 | Security group blocks SSH | Port 22 rule removed | Security Groups | [View SGs](screenshots/ACSS_03_SecurityGroups_NACLs.png) |
+| ✅ 5 | GuardDuty security alert | Unauthorized API calls | GuardDuty, Python | [View Script](screenshots/ACSS_05_Python-Boto3-GuardDuty-Findings-Automation.png) |
+| ✅ 6 | CloudWatch false alarms | Metric thresholds | CloudWatch | [View Health](screenshots/ACSS_08_Service_Health.PNG) |
+| ✅ 7 | IAM permission denied | Policy attachments | IAM, Debugging | [View IAM](screenshots/ACSS_07_IAM_Roles_Policies.PNG) |
+| ✅ 8 | VPC subnet communication | NACL rules | NACLs, Network | [View NACLs](screenshots/ACSS_03_SecurityGroups_NACLs.png) |
 
 ### In Progress (1)
 
@@ -68,7 +105,7 @@ Remote cloud support roles care more about your troubleshooting ability than cre
 
 ---
 
-## 📊 Sample Troubleshooting: EC2 Connectivity
+## 📊 Sample Troubleshooting: EC2 Connectivity Issue
 
 ### The Problem
 ```
@@ -89,6 +126,8 @@ aws ec2 describe-instance-status --instance-ids i-0abc123
 - ✅ Instance checks passing
 - **Conclusion:** Not an instance-level problem
 
+![Service Health Check](screenshots/ACSS_08_Service_Health.PNG)
+
 #### Step 2: Test Connectivity
 ```bash
 # From inside EC2 instance
@@ -100,10 +139,12 @@ ping 8.8.8.8
 - 🔴 Cannot reach internet
 - **Conclusion:** Network routing issue
 
-#### Step 3: Check VPC Configuration
+#### Step 3: Check VPC & Route Table Configuration
 ```bash
 aws ec2 describe-route-tables --filters "Name=vpc-id,Values=vpc-xyz"
 ```
+
+![Route Tables Investigation](screenshots/ACSS_02_Subnets_RouteTables.PNG)
 
 **Found the problem:**
 ```
@@ -124,6 +165,8 @@ aws ec2 create-route \
   --gateway-id igw-abc123
 ```
 
+![Fixed VPC Configuration](screenshots/ACSS_01_VPC_Setup.png)
+
 #### Step 6: Verify Fix
 ```bash
 ping 8.8.8.8
@@ -136,7 +179,7 @@ ping 8.8.8.8
 - Always check routing tables before assuming instance problems
 - CloudTrail is essential for understanding what changed
 - Document the entire process for knowledge sharing
-- Set up alerts to prevent future deletions
+- Set up CloudWatch alarms to prevent future routing deletions
 
 **[Full scenario writeup →](scenarios/01_ec2_connectivity/)**
 
@@ -155,7 +198,14 @@ Monitoring: CloudWatch, CloudWatch Logs
 IaC:        CloudFormation, Terraform
 ```
 
-### Automation Scripts Example
+![My AWS Infrastructure](screenshots/ACSS_01_VPC_Setup.png)
+
+### Python Automation Example
+
+Here's my GuardDuty findings automation script in action:
+
+![GuardDuty Automation Script](screenshots/ACSS_05_Python-Boto3-GuardDuty-Findings-Automation.png)
+
 ```python
 # Automated Security Group Checker
 # Detects EC2 instances without SSH access
@@ -210,7 +260,7 @@ if __name__ == '__main__':
 **Other Tools:**
 - **Languages:** Python 3.8+, Bash, PowerShell
 - **Libraries:** Boto3, AWS CLI
-- **Version Control:** Git, GitHub
+- **Version Control:** Git, GitHub (see my [workflow](screenshots/ACSS_04_Git-Branch-Merge-Workflow.png))
 - **IaC:** Terraform, CloudFormation
 
 ---
@@ -263,8 +313,8 @@ AWS_Cloud_Support_Sim/
 │   ├── check_security_groups.py
 │   ├── analyze_iam_policies.py
 │   └── monitor_cloudwatch.py
-├── Diagrams/              # Architecture diagrams (in progress)
-├── screenshots/           # Visual documentation (in progress)
+├── Diagrams/              # Architecture diagrams
+├── screenshots/           # Visual documentation (8 screenshots)
 ├── main.py               # Scenario launcher
 ├── main.tf               # Terraform infrastructure
 ├── requirements.txt      # Python dependencies
@@ -277,6 +327,7 @@ AWS_Cloud_Support_Sim/
 
 ### Current Status (December 2024)
 - ✅ 8 scenarios completed and documented
+- ✅ 8 professional screenshots captured
 - ✅ 15+ automation scripts written
 - ✅ 500+ hours invested in self-learning
 - 🚧 Studying for AWS Cloud Practitioner (exam February 2026)
@@ -295,11 +346,11 @@ AWS_Cloud_Support_Sim/
 
 | Role | Why I'm Qualified | Salary Range |
 |------|-------------------|--------------|
-| **Cloud Support Engineer** | 8 documented AWS troubleshooting scenarios | $60-80k |
+| **Cloud Support Engineer** | 8 documented troubleshooting scenarios with screenshots | $60-80k |
 | **Technical Support Engineer** | Python automation + systematic troubleshooting | $55-75k |
 | **CloudOps Engineer** | IaC with Terraform + monitoring experience | $65-85k |
-| **NOC Analyst** | Incident response + AWS monitoring | $50-70k |
-| **Junior DevOps Engineer** | Git + automation + AWS services | $60-80k |
+| **NOC Analyst** | Incident response + AWS monitoring setup | $50-70k |
+| **Junior DevOps Engineer** | Git workflow + automation + AWS services | $60-80k |
 
 **Seeking:** 100% remote positions with flexible schedules at felon-friendly employers
 
@@ -313,11 +364,15 @@ AWS_Cloud_Support_Sim/
 - Resume lists technologies
 
 ### What I Can Show:
-- ✅ **8 documented troubleshooting cases** with step-by-step solutions
-- ✅ **15+ automation scripts** solving real AWS problems
-- ✅ **Systematic approach** to incident response (not guessing)
-- ✅ **Clear documentation** demonstrating communication skills
+- ✅ **8 documented troubleshooting cases** with real AWS screenshots
+- ✅ **15+ automation scripts** solving actual AWS problems
+- ✅ **Systematic troubleshooting approach** (not guessing)
+- ✅ **Professional Git workflow** with branches and PRs
+- ✅ **Clear visual documentation** showing communication skills
 - ✅ **Self-taught** proving I can learn independently
+
+![Example: IAM Configuration](screenshots/ACSS_07_IAM_Roles_Policies.PNG)
+![Example: Security Groups](screenshots/ACSS_03_SecurityGroups_NACLs.png)
 
 ### Soft Skills from Non-Tech Background:
 - **Customer service** - 5+ years resolving complex customer issues
@@ -427,7 +482,7 @@ If you're:
 
 ---
 
-**Last Updated:** December 13, 2024  
+**Last Updated:** December 13, 2025 
 **Repository Status:** Actively maintained (updated weekly)  
 **Job Search Status:** Actively applying, ready to interview
 
