@@ -2,3 +2,14 @@
 *.tfstate
 *.tfstate.backup
 .terraform.lock.hcl
+
+# Additional patterns
+__pycache__
+*.pyc
+.env
+venv/
+.aws/
+*.log
+.DS_Store
+*.key
+*.pem

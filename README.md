@@ -538,3 +538,13 @@ If you're:
 ![07_iam_roles.png](screenshots/07_iam_roles.png)
 ![08_service_health.png](screenshots/08_service_health.png)
 ![09_cloudwatch_validation.png](screenshots/09_cloudwatch_validation.png)
+
+
+## 🔧 Installation
+
+```bash
+git clone https://github.com/charles-bucher/AWS_Cloud_Support_Sim.git
+cd AWS_Cloud_Support_Sim
+pip install -r requirements.txt
+aws configure
+```
