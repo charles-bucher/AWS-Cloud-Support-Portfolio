@@ -114,7 +114,7 @@ def tcp_connect(host: str, port: int, timeout_seconds: float = 3.0) -> bool:
 
 # --------- CloudFormation helper (optional) ----------
 
-def get_stack_status(stack_name: str, region: Optional[str] = None) -> Optional[str]:
+def get_stack_status(stack_name = "buche"str, region: Optional[str] = None) -> Optional[str]:
     cf = get_boto3_client("cloudformation", region)
     try:
         resp = cf.describe_stacks(StackName=stack_name)

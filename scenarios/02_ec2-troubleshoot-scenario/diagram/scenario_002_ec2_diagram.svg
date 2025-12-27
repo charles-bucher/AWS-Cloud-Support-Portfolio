@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #232F3E; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; fill: #545B64; }
+      .box-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: white; }
+      .text { font-family: Arial, sans-serif; font-size: 13px; fill: #232F3E; }
+      .text-white { font-family: Arial, sans-serif; font-size: 13px; fill: white; }
+      .code { font-family: 'Courier New', monospace; font-size: 11px; fill: #232F3E; }
+      
+      .box { stroke-width: 2; rx: 8; }
+      .problem-box { fill: #E74C3C; stroke: #C0392B; }
+      .action-box { fill: #3498DB; stroke: #2980B9; }
+      .solution-box { fill: #2ECC71; stroke: #27AE60; }
+      .learning-box { fill: #F39C12; stroke: #D68910; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#F5F7FA"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">Real Scenario: EC2 Can't Connect (SSH Timeout)</text>
+  <text x="450" y="58" text-anchor="middle" class="subtitle">This is a common entry-level cloud support issue I learned to fix</text>
+  
+  <!-- Problem Box -->
+  <rect x="50" y="90" width="800" height="90" class="box problem-box"/>
+  <text x="450" y="115" text-anchor="middle" class="box-title">❌ The Problem</text>
+  <text x="450" y="140" text-anchor="middle" class="text-white">I deployed an EC2 instance but can't SSH into it</text>
+  <text x="450" y="160" text-anchor="middle" class="text-white">Error: "Connection timeout" when trying: ssh ec2-user@54.123.45.67</text>
+  
+  <!-- Investigation Steps -->
+  <rect x="50" y="210" width="385" height="200" class="box action-box"/>
+  <text x="242" y="235" text-anchor="middle" class="box-title">🔍 What I Checked</text>
+  
+  <text x="70" y="265" class="text-white" font-weight="bold">Step 1: Is EC2 running?</text>
+  <text x="85" y="285" class="text-white">✓ Checked AWS Console → Instance is "running"</text>
+  
+  <text x="70" y="315" class="text-white" font-weight="bold">Step 2: Security Group rules?</text>
+  <text x="85" y="335" class="text-white">✗ FOUND ISSUE: Port 22 not open!</text>
+  <text x="85" y="352" class="text-white">Security group only allowed port 80</text>
+  
+  <text x="70" y="380" class="text-white" font-weight="bold">Step 3: VPC routing?</text>
+  <text x="85" y="400" class="text-white">✓ Internet Gateway attached, route table OK</text>
+  
+  <!-- AWS Console Screenshot placeholder -->
+  <rect x="465" y="210" width="385" height="200" class="box" fill="white" stroke="#3498DB"/>
+  <text x="657" y="235" text-anchor="middle" class="box-title" fill="#3498DB">📊 CloudWatch Evidence</text>
+  
+  <rect x="485" y="250" width="345" height="140" fill="#F5F7FA" stroke="#BDC3C7"/>
+  <text x="657" y="275" text-anchor="middle" class="code" font-size="10">VPC Flow Logs showed:</text>
+  <text x="500" y="295" class="code" fill="#E74C3C">REJECT 203.0.113.5 → 10.0.1.50 port 22</text>
+  <text x="500" y="315" class="code">Source: My laptop (203.0.113.5)</text>
+  <text x="500" y="330" class="code">Destination: EC2 (10.0.1.50)</text>
+  <text x="500" y="345" class="code">Port: 22 (SSH)</text>
+  <text x="500" y="360" class="code" fill="#E74C3C">Action: REJECTED by security group</text>
+  <text x="500" y="380" class="code">Reason: No inbound rule for port 22</text>
+  
+  <!-- Solution Box -->
+  <rect x="50" y="440" width="385" height="130" class="box solution-box"/>
+  <text x="242" y="465" text-anchor="middle" class="box-title">✅ The Fix</text>
+  
+  <text x="70" y="495" class="text-white" font-weight="bold">What I did:</text>
+  <text x="85" y="515" class="text-white">1. Went to EC2 → Security Groups</text>
+  <text x="85" y="533" class="text-white">2. Added inbound rule:</text>
+  <text x="100" y="550" class="text-white">   • Type: SSH, Port: 22, Source: My IP</text>
+  
+  <!-- What I Learned Box -->
+  <rect x="465" y="440" width="385" height="130" class="box learning-box"/>
+  <text x="657" y="465" text-anchor="middle" class="box-title">💡 What I Learned</text>
+  
+  <text x="485" y="495" class="text-white" font-weight="bold">Key Takeaways:</text>
+  <text x="500" y="515" class="text-white">✓ Always check security groups first</text>
+  <text x="500" y="533" class="text-white">✓ VPC Flow Logs help find blocked traffic</text>
+  <text x="500" y="551" class="text-white">✓ Use "My IP" for SSH (not 0.0.0.0/0)</text>
+  
+  <!-- Skills Demonstrated -->
+  <rect x="50" y="600" width="800" height="80" fill="white" stroke="#232F3E" stroke-width="2" rx="8"/>
+  <text x="450" y="628" text-anchor="middle" class="title" style="font-size: 18px">✨ Entry-Level Skills I Demonstrated</text>
+  
+  <text x="150" y="655" text-anchor="middle" class="text">Security Groups</text>
+  <text x="150" y="672" class="subtitle" style="font-size: 12px">Configure rules</text>
+  
+  <text x="310" y="655" text-anchor="middle" class="text">VPC Networking</text>
+  <text x="310" y="672" class="subtitle" style="font-size: 12px">Understand basics</text>
+  
+  <text x="470" y="655" text-anchor="middle" class="text">Troubleshooting</text>
+  <text x="470" y="672" class="subtitle" style="font-size: 12px">Methodical approach</text>
+  
+  <text x="630" y="655" text-anchor="middle" class="text">Logging</text>
+  <text x="630" y="672" class="subtitle" style="font-size: 12px">Read VPC Flow Logs</text>
+  
+  <text x="750" y="655" text-anchor="middle" class="text">AWS Console</text>
+  <text x="750" y="672" class="subtitle" style="font-size: 12px">Navigate services</text>
+</svg>
