@@ -53,3 +53,12 @@ Get real-world experience monitoring AWS resources. This isn’t just following 
 - `cloudwatch-monitoring.txt` documenting what worked, what didn’t, and what you learned
 
 > Be honest: show what broke, how you figured it out, and what you learned. This is exactly what hiring managers want to see — real problem-solving, not just “everything worked.”
+
+## Overview
+This project demonstrates practical Cloud Support & CloudOps skills by working with AWS services such as EC2, CloudWatch, IAM, SNS.
+
+## Skills Demonstrated
+Automation, monitoring, incident response, troubleshooting, and Infrastructure as Code using Terraform/CloudFormation.
+
+## What I Learned
+Hands-on experience troubleshooting AWS incidents, applying automation, monitoring with CloudWatch, and ensuring cloud reliability.

@@ -6,7 +6,9 @@
 Brief: AWS Cloud Support Simulation Script
 Purpose: Hands-on troubleshooting and RCA practice""
 """"
+# Import required libraries
 import os
+
 
 
 @pytest.fixture
