@@ -1,6 +1,7 @@
 ﻿# AWS_Cloud_Support_Sim
 
-Simulates real-world AWS Cloud Support scenarios to demonstrate troubleshooting, automation, and operational excellence.
+
+Description: Simulates real-world AWS Cloud Support scenarios to demonstrate troubleshooting, automation, and operational excellence.
 
 ## Features
 - Error-driven labs (EC2, S3, Lambda, IAM)
@@ -70,3 +71,7 @@ Screenshot placeholder: ![Monitoring](docs/screenshots/monitoring_example.png)
 - Monitoring & Troubleshooting: CloudWatch, Alarms, Logs
 - Automation & Remediation Scripts
 - Operational Excellence: Ticketing mindset, error-driven labs
+
+
+## Usage
+Instructions here...
