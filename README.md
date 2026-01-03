@@ -93,9 +93,9 @@ So instead of just watching tutorials, I'm building a portfolio that shows:
 ### What Makes This Real
 
 **Not Theory:**
-- ❌ I didn't just copy someone's tutorial
-- ❌ I didn't use sample screenshots from Google
-- ❌ I didn't claim skills I don't have
+- � I didn't just copy someone's tutorial
+- � I didn't use sample screenshots from Google
+- � I didn't claim skills I don't have
 
 **Actually Built:**
 - ✅ Every screenshot is from MY AWS account
@@ -130,28 +130,28 @@ So instead of just watching tutorials, I'm building a portfolio that shows:
 
 ---
 
-## 🏗️ Architecture
+## �� Architecture
 
 ### What My Lab Environment Looks Like
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
+┌─────────────────────────────────────────────────────────────────�
 │                         AWS Cloud                                │
 │                                                                   │
-│  ┌──────────────┐        ┌──────────────┐       ┌─────────────┐│
+│  ┌──────────────�        ┌──────────────�       ┌─────────────�│
 │  │   VPC        │        │  CloudWatch  │       │   GuardDuty ││
 │  │              │        │              │       │             ││
-│  │  ┌────────┐  │        │  - Logs      │       │  - Alerts   ││
+│  │  ┌────────�  │        │  - Logs      │       │  - Alerts   ││
 │  │  │  EC2   │  │───────▶│  - Metrics   │───────▶│  - Findings ││
 │  │  │Instance│  │        │  - Alarms    │       │             ││
 │  │  └────────┘  │        └──────────────┘       └─────────────┘│
 │  │              │                                                │
-│  │  ┌────────┐  │        ┌──────────────┐                       │
+│  │  ┌────────�  │        ┌──────────────�                       │
 │  │  │  S3    │  │        │   Lambda     │                       │
 │  │  │ Bucket │  │        │   Function   │                       │
 │  │  └────────┘  │        └──────────────┘                       │
 │  │              │                                                │
-│  │  ┌────────┐  │                                                │
+│  │  ┌────────�  │                                                │
 │  │  │  IAM   │  │        Deployed via Terraform                 │
 │  │  │ Roles  │  │                                                │
 │  │  └────────┘  │                                                │
@@ -162,7 +162,7 @@ So instead of just watching tutorials, I'm building a portfolio that shows:
 ### Scenario Flow Example
 
 ```
-┌─────────────┐      ┌──────────────┐      ┌─────────────┐      ┌──────────────┐
+┌─────────────�      ┌──────────────�      ┌─────────────�      ┌──────────────�
 │   Alert     │─────▶│ Investigation│─────▶│  Root Cause │─────▶│  Remediation │
 │  Received   │      │   & Logs     │      │   Analysis  │      │  & Testing   │
 └─────────────┘      └──────────────┘      └─────────────┘      └──────────────┘
@@ -189,7 +189,7 @@ So instead of just watching tutorials, I'm building a portfolio that shows:
 
 Each scenario = a problem I created, investigated, and fixed. This is how I learn.
 
-### 1️⃣ EC2 Connectivity Issues
+### 1�⃣ EC2 Connectivity Issues
 
 **What I Learned:** How to troubleshoot SSH connectivity
 
@@ -210,13 +210,13 @@ Each scenario = a problem I created, investigated, and fixed. This is how I lear
 
 ```
 📊 BEFORE → AFTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+���������������������������������������
 Security Group Rules:
-❌ BEFORE: Port 22 - No inbound rule
+� BEFORE: Port 22 - No inbound rule
 ✅ AFTER:  Port 22 - My IP only (secure!)
 
 Connection Status:
-❌ BEFORE: ssh: connect to host timeout
+� BEFORE: ssh: connect to host timeout
 ✅ AFTER:  Successfully authenticated
 ```
 
@@ -227,7 +227,7 @@ Connection Status:
 
 ---
 
-### 2️⃣ S3 Access Denied Errors
+### 2�⃣ S3 Access Denied Errors
 
 **What I Learned:** IAM policies control S3 access, not just bucket policies
 
@@ -251,13 +251,13 @@ Connection Status:
 
 ```
 📊 BEFORE → AFTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+���������������������������������������
 IAM Policy:
-❌ BEFORE: No S3 permissions on EC2 role
+� BEFORE: No S3 permissions on EC2 role
 ✅ AFTER:  s3:GetObject, s3:PutObject allowed
 
 Application Logs:
-❌ BEFORE: AccessDenied (403) error
+� BEFORE: AccessDenied (403) error
 ✅ AFTER:  Objects retrieved successfully (200 OK)
 ```
 
@@ -271,7 +271,7 @@ Application Logs:
 
 ---
 
-### 3️⃣ Lambda Function Timeout
+### 3�⃣ Lambda Function Timeout
 
 **What I Learned:** Lambda has limits, and you need to configure them properly
 
@@ -291,17 +291,17 @@ Application Logs:
 
 ```
 📊 BEFORE → AFTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+���������������������������������������
 Lambda Configuration:
-❌ BEFORE: Timeout: 3 seconds (default)
+� BEFORE: Timeout: 3 seconds (default)
 ✅ AFTER:  Timeout: 30 seconds
 
 CloudWatch Metrics:
-❌ BEFORE: Duration: 3000ms (always timeout)
+� BEFORE: Duration: 3000ms (always timeout)
 ✅ AFTER:  Duration: 4200ms (success)
 
 Error Rate:
-❌ BEFORE: 95% timeout errors
+� BEFORE: 95% timeout errors
 ✅ AFTER:  0% errors, 100% success rate
 ```
 
@@ -312,7 +312,7 @@ Error Rate:
 
 ---
 
-### 4️⃣ IAM Permission Errors
+### 4�⃣ IAM Permission Errors
 
 **What I Learned:** IAM policies are picky about syntax
 
@@ -340,17 +340,17 @@ Error Rate:
 
 ```
 📊 BEFORE → AFTER
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+���������������������������������������
 IAM Policy Permissions:
-❌ BEFORE: Missing CloudWatch Logs actions
+� BEFORE: Missing CloudWatch Logs actions
 ✅ AFTER:  All 3 required actions added
 
 CloudWatch Log Groups:
-❌ BEFORE: No logs appearing (silent failure)
+� BEFORE: No logs appearing (silent failure)
 ✅ AFTER:  Log stream active, events flowing
 
 Error Messages:
-❌ BEFORE: AccessDeniedException
+� BEFORE: AccessDeniedException
 ✅ AFTER:  Logs successfully written
 ```
 
@@ -361,7 +361,7 @@ Error Messages:
 
 ---
 
-### 5️⃣ GuardDuty Security Findings
+### 5�⃣ GuardDuty Security Findings
 
 **What I Learned:** How to respond to security alerts (incident response basics)
 
@@ -382,7 +382,7 @@ Error Messages:
 
 ```
 📊 INCIDENT RESPONSE TIMELINE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+���������������������������������������
 Detection:
   GuardDuty Finding: UnauthorizedAccess (simulated)
 
@@ -459,7 +459,7 @@ terraform destroy -auto-approve
 
 ---
 
-## 📁 Project Structure
+## � Project Structure
 
 ```
 AWS_Cloud_Support_Sim/
@@ -486,7 +486,7 @@ AWS_Cloud_Support_Sim/
 
 ---
 
-## 🛠️ Technologies I'm Learning
+## 🛠� Technologies I'm Learning
 
 ### Cloud Platform
 ![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
@@ -598,7 +598,7 @@ MIT License - see [LICENSE.md](LICENSE.md)
 
 ---
 
-## 🙏 The Truth
+## � The Truth
 
 **I'm Self-Taught:**
 - This is a learning project, not production work
@@ -618,7 +618,7 @@ MIT License - see [LICENSE.md](LICENSE.md)
 
 <div align="center">
 
-**⭐ If you find this helpful, please star this repo**
+**� If you find this helpful, please star this repo**
 
 Built with ☕ and determination
 
@@ -626,3 +626,24 @@ Built with ☕ and determination
 *Self-Taught Cloud Engineer*
 
 </div>
+## Description
+Write a short description of the project here.
+
+## Scenario Walkthrough
+Step-by-step lab walkthrough here.
+
+## Skills Demonstrated
+- List AWS/DevOps skills demonstrated
+
+# Project Title
+
+## Usage
+Instructions here...
+
+![Diagram](diagram.png)
+
+## Infrastructure as Code
+Terraform/CloudFormation usage...
+
+## Monitoring / Operational Signals
+Include logs/metrics...
