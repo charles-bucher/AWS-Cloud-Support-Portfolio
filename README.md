@@ -1,117 +1,138 @@
-# AWS Cloud Support Simulator 🚀
+# AWS SysOps Administrator Lab Environment 🚀
 
 <div align="center">
 
-### 🎯 Project Status
-[![Active Development](https://img.shields.io/badge/Status-Active_Development-brightgreen?style=for-the-badge)](https://github.com/charles-bucher/AWS_Cloud_Support_Sim)
-[![Portfolio Project](https://img.shields.io/badge/Type-Portfolio_Project-blue?style=for-the-badge)](https://github.com/charles-bucher/AWS_Cloud_Support_Sim)
-[![Open for Opportunities](https://img.shields.io/badge/Hiring-Open_to_Work-success?style=for-the-badge)](https://linkedin.com/in/charles-bucher-cloud)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE.md)
+## 🎯 Self-Taught AWS Portfolio Project
 
-### ☁️ AWS Services
-![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![EC2](https://img.shields.io/badge/Amazon_EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![S3](https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
-![IAM](https://img.shields.io/badge/AWS_IAM-DD344C?style=for-the-badge&logo=amazoniam&logoColor=white)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white)
-![VPC](https://img.shields.io/badge/Amazon_VPC-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![GuardDuty](https://img.shields.io/badge/GuardDuty-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
+[![AWS](https://img.shields.io/badge/AWS-Learning_SysOps-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Self-Study](https://img.shields.io/badge/Status-Self_Teaching-orange?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Active Development](https://img.shields.io/badge/Project-Active_Development-brightgreen?style=for-the-badge)](https://github.com/charles-bucher/AWS_Cloud_Support_Sim)
+[![Open to Work](https://img.shields.io/badge/Hiring-Entry_Level_Cloud-success?style=for-the-badge)](https://linkedin.com/in/charles-bucher-cloud)
 
-### 🛠️ Tools & Technologies
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-### 📚 Skills Demonstrated
-![Infrastructure as Code](https://img.shields.io/badge/IaC-Infrastructure_as_Code-purple?style=for-the-badge)
-![Cloud Support](https://img.shields.io/badge/Cloud-Support_Engineer-orange?style=for-the-badge)
-![Troubleshooting](https://img.shields.io/badge/Skill-Troubleshooting-red?style=for-the-badge)
-![Monitoring](https://img.shields.io/badge/Monitoring-CloudWatch_Logs-blue?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security-IAM_&_GuardDuty-darkred?style=for-the-badge)
-![Automation](https://img.shields.io/badge/Automation-Scripts_&_CI/CD-yellow?style=for-the-badge)
-
-### 🎓 Certifications (In Progress)
-![AWS SAA](https://img.shields.io/badge/AWS-Solutions_Architect_Associate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![AWS SysOps](https://img.shields.io/badge/AWS-SysOps_Administrator-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-
-### 📫 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Charles_Bucher-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/charles-bucher-cloud)
-[![GitHub](https://img.shields.io/badge/GitHub-Charles--Bucher-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Charles-Bucher)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charles.bucher.cloud@gmail.com)
+**Building hands-on AWS skills through real-world scenarios**  
+*Career transition to cloud operations*
 
 </div>
 
-> **Real-world AWS troubleshooting scenarios demonstrating Cloud Support Engineer skills**
+---
 
-A hands-on portfolio project simulating production AWS Cloud Support incidents. Demonstrates troubleshooting methodology, infrastructure automation, and operational best practices for entry-level cloud roles.
+## 🎓 My Learning Journey (Honest Status)
 
-![Profile Views](https://komarev.com/ghpvc/?username=charles-bucher&label=Profile%20Views&color=0e75b6&style=flat-square)
-![GitHub followers](https://img.shields.io/github/followers/charles-bucher?style=flat-square&logo=github)
-![GitHub stars](https://img.shields.io/github/stars/charles-bucher/AWS_Cloud_Support_Sim?style=flat-square&logo=github)
+**Background:** Self-teaching AWS to transition into cloud operations  
+**Current Role:** Part-time delivery driver while building cloud skills  
+**Goal:** Entry-level AWS SysOps/Cloud Support role
+
+### What I'm Actually Doing
+
+```
+✅ COMPLETED
+├─ Deployed real AWS infrastructure (EC2, VPC, S3, Lambda)
+├─ Built 5 troubleshooting scenarios with screenshots
+├─ Learned Terraform for Infrastructure as Code
+├─ Wrote Python automation scripts
+└─ Documented everything professionally
+
+🔄 CURRENTLY WORKING ON
+├─ AWS Solutions Architect - Associate study
+├─ Adding more complex scenarios (ASG, ELB)
+├─ Learning CloudFormation
+└─ Practicing for certification exam
+
+📋 PLANNED NEXT
+├─ Take AWS SAA exam when ready
+├─ Build CI/CD pipeline project
+├─ Learn container basics (ECS)
+└─ Add monitoring/alerting scenarios
+```
+
+### Skills I've Built (No Exaggeration)
+
+| Skill | Level | Evidence |
+|-------|-------|----------|
+| AWS Console Navigation | Comfortable | Screenshots throughout repo |
+| EC2 Basics | Learning | Can launch/troubleshoot instances |
+| S3 Operations | Learning | Bucket policies, access control |
+| IAM Policies | Basic | Can read/modify policies |
+| CloudWatch Logs | Basic | Can search logs, spot errors |
+| Terraform | Beginner | Can deploy basic infrastructure |
+| Python Scripts | Basic | Simple automation tasks |
+| Linux/Bash | Comfortable | Daily use for projects |
+| Git/GitHub | Comfortable | This repo proves it |
+| Documentation | Strong | You're reading it |
+
+**Translation for Employers:** I'm entry-level, but I can prove I've actually touched AWS and built things.
 
 ---
 
 ## 📋 Table of Contents
 
-- [About This Project](#about-this-project)
-- [Skills Demonstrated](#skills-demonstrated)
+- [Why I Built This](#why-i-built-this)
+- [What I've Actually Built](#what-ive-actually-built)
 - [Architecture](#architecture)
 - [Lab Scenarios](#lab-scenarios)
 - [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Learning Journey](#learning-journey)
+- [What I'm Learning](#what-im-learning)
+- [Career Goals](#career-goals)
 - [Contact](#contact)
 
 ---
 
-## 🎯 About This Project
+## 💡 Why I Built This
 
-This repository showcases my ability to troubleshoot and resolve real-world AWS infrastructure issues using a Cloud Support Engineer mindset. Each scenario follows industry-standard incident response workflows:
+**Short Answer:** I need to prove I can do the work, not just say I'm "learning AWS."
 
-✅ **Problem Identification** → Investigation → Root Cause Analysis → Remediation → Prevention
+**Long Answer:**  
+I'm transitioning to cloud from delivery work. I have a record from 2003 (clean since 2008). I know I need to work twice as hard to get an interview.
 
-Built to demonstrate readiness for:
-- AWS Cloud Support Associate roles
-- Junior SysOps Administrator positions  
-- Cloud Operations Engineer roles
-- Technical Support Engineer (Cloud) positions
+So instead of just watching tutorials, I'm building a portfolio that shows:
+- ✅ I can actually navigate AWS Console
+- ✅ I can troubleshoot real problems
+- ✅ I can document my work professionally
+- ✅ I'm serious about this career change
+
+### What Makes This Real
+
+**Not Theory:**
+- ❌ I didn't just copy someone's tutorial
+- ❌ I didn't use sample screenshots from Google
+- ❌ I didn't claim skills I don't have
+
+**Actually Built:**
+- ✅ Every screenshot is from MY AWS account
+- ✅ I broke things on purpose to learn how to fix them
+- ✅ I spent my own money on AWS (Free Tier + ~$20)
+- ✅ I worked on this after 10-hour delivery shifts
 
 ---
 
-## 💼 Skills Demonstrated
+## 🔧 What I've Actually Built
 
-### AWS Services
-- **Compute:** EC2 (troubleshooting instance connectivity, SSH issues, performance)
-- **Storage:** S3 (bucket policies, encryption, access denied errors)
-- **Serverless:** Lambda (execution failures, IAM permissions, timeout errors)
-- **Security:** IAM (policy troubleshooting, least privilege), GuardDuty (threat detection)
-- **Monitoring:** CloudWatch (logs analysis, metrics, alarms configuration)
-- **Networking:** VPC, Security Groups, Route Tables, Internet Gateways
+### Real Infrastructure I Deployed
 
-### Technical Skills
-![Infrastructure as Code](https://img.shields.io/badge/Practice-Infrastructure_as_Code-7B42BC?style=flat-square&logo=terraform)
-![Security First](https://img.shields.io/badge/Practice-Security_First-DD344C?style=flat-square&logo=security)
-![Documentation](https://img.shields.io/badge/Practice-Well_Documented-blue?style=flat-square&logo=markdown)
-![Version Control](https://img.shields.io/badge/Practice-Git_Workflow-F05032?style=flat-square&logo=git)
+**VPC Environment**
+- Custom VPC with public/private subnets
+- Internet Gateway and route tables
+- Security Groups with proper rules
+- Network ACLs for defense in depth
 
-- Infrastructure as Code (Terraform)
-- Python automation scripts
-- Log analysis and debugging
-- Incident response workflows
-- Documentation and ticketing mindset
-- Root cause analysis
+**Compute & Storage**
+- EC2 instances (practiced SSH, security groups)
+- S3 buckets (policies, encryption, versioning)
+- Lambda functions (IAM roles, CloudWatch logs)
+
+**Security & Monitoring**
+- IAM roles and policies
+- GuardDuty for threat detection
+- CloudWatch for logs and metrics
+- Practiced incident response workflow
+
+**All deployed with Terraform** - not clicking around Console
 
 ---
 
 ## 🏗️ Architecture
 
-### High-Level Environment Diagram
+### What My Lab Environment Looks Like
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -152,7 +173,7 @@ Built to demonstrate readiness for:
 ```
 
 ![VPC Architecture Setup](screenshots/01_vpc_architecture_setup.png)
-*Figure 1: Complete VPC architecture with subnets, routing, and security groups*
+*Figure 1: Complete VPC architecture I built with subnets, routing, and security groups*
 
 ![VPC Subnets and Routing](screenshots/02_vpc_subnets_routing.png)
 *Figure 2: Detailed subnet configuration and route table associations*
@@ -160,37 +181,29 @@ Built to demonstrate readiness for:
 ### Lab Environment Status
 
 ![Lab Environment Verified](screenshots/00_lab_environment_verified.png)
-*✅ Verified working lab environment deployed via Terraform*
+*✅ Verified working lab environment I deployed via Terraform*
 
 ---
 
-## 🔧 Lab Scenarios
+## 🔧 Lab Scenarios (What I've Learned)
 
-Each scenario includes: Problem → Investigation → Solution → Validation
-
-### Scenario Completion Status
-
-![EC2 Complete](https://img.shields.io/badge/EC2-Connectivity_Fixed-success?style=flat-square&logo=amazonec2)
-![S3 Complete](https://img.shields.io/badge/S3-Access_Resolved-success?style=flat-square&logo=amazons3)
-![Lambda Complete](https://img.shields.io/badge/Lambda-Timeout_Fixed-success?style=flat-square&logo=awslambda)
-![IAM Complete](https://img.shields.io/badge/IAM-Permissions_Updated-success?style=flat-square&logo=amazoniam)
-![GuardDuty Complete](https://img.shields.io/badge/GuardDuty-Threat_Mitigated-success?style=flat-square&logo=amazonaws)
-
----
+Each scenario = a problem I created, investigated, and fixed. This is how I learn.
 
 ### 1️⃣ EC2 Connectivity Issues
 
-**Problem:** Unable to SSH into EC2 instance  
-**Investigation:**
-- Checked Security Group rules (port 22 blocked)
-- Verified Network ACLs
-- Confirmed instance has public IP
-- Reviewed route table configuration
+**What I Learned:** How to troubleshoot SSH connectivity
 
-**Solution:**
+**Problem I Created:** Launched EC2 without proper Security Group rules  
+**Investigation:**
+- Checked Security Group (port 22 was blocked)
+- Verified instance had public IP
+- Confirmed route table had IGW route
+- Learned to read VPC Flow Logs
+
+**How I Fixed It:**
 ```bash
 # Added inbound rule for SSH (port 22)
-# Source: My IP / 0.0.0.0/0 (for demo purposes)
+# Source: My IP (learned not to use 0.0.0.0/0 in production)
 ```
 
 **Result:** ✅ Successfully connected via SSH
@@ -200,7 +213,7 @@ Each scenario includes: Problem → Investigation → Solution → Validation
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Security Group Rules:
 ❌ BEFORE: Port 22 - No inbound rule
-✅ AFTER:  Port 22 - 0.0.0.0/0 (SSH enabled)
+✅ AFTER:  Port 22 - My IP only (secure!)
 
 Connection Status:
 ❌ BEFORE: ssh: connect to host timeout
@@ -208,20 +221,24 @@ Connection Status:
 ```
 
 ![Security Groups Configuration](screenshots/03_security_groups_network_acls.png)
-*Figure 3: Security Group rules configuration showing SSH access enabled*
+*Figure 3: Security Group rules I configured after learning my mistake*
+
+**Key Learning:** Always check Security Groups first. Saves hours of troubleshooting.
 
 ---
 
 ### 2️⃣ S3 Access Denied Errors
 
-**Problem:** Application receiving `403 Access Denied` when accessing S3 bucket  
-**Investigation:**
-- Reviewed S3 bucket policy
-- Checked IAM role attached to EC2
-- Analyzed CloudWatch logs
-- Verified encryption settings
+**What I Learned:** IAM policies control S3 access, not just bucket policies
 
-**Solution:**
+**Problem I Created:** EC2 instance couldn't access S3 bucket  
+**Investigation:**
+- Checked S3 bucket policy (looked fine)
+- Checked IAM role attached to EC2 (missing permissions!)
+- Learned the difference between resource policies and identity policies
+- Analyzed CloudWatch logs to confirm AccessDenied errors
+
+**How I Fixed It:**
 ```json
 {
   "Effect": "Allow",
@@ -236,7 +253,7 @@ Connection Status:
 📊 BEFORE → AFTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 IAM Policy:
-❌ BEFORE: No S3 permissions on role
+❌ BEFORE: No S3 permissions on EC2 role
 ✅ AFTER:  s3:GetObject, s3:PutObject allowed
 
 Application Logs:
@@ -248,23 +265,27 @@ Application Logs:
 *Initial S3 bucket creation and configuration*
 
 ![S3 Bucket Configuration](screenshots/08_s3_bucket_configuration.png)
-*Figure 4: S3 bucket permissions and IAM policy configuration*
+*Figure 4: S3 bucket permissions and IAM policy I configured*
+
+**Key Learning:** IAM is confusing at first, but it's just "who can do what to which resources."
 
 ---
 
 ### 3️⃣ Lambda Function Timeout
 
-**Problem:** Lambda function timing out after 3 seconds  
-**Investigation:**
-- Reviewed CloudWatch Logs for error patterns
-- Analyzed function execution time metrics
-- Checked memory allocation
-- Identified inefficient database queries
+**What I Learned:** Lambda has limits, and you need to configure them properly
 
-**Solution:**
+**Problem I Created:** Lambda function timing out at default 3 seconds  
+**Investigation:**
+- Checked CloudWatch Logs (saw timeout errors)
+- Analyzed execution duration metrics
+- Learned about Lambda memory/timeout limits
+- Discovered my code was inefficient
+
+**How I Fixed It:**
 - Increased timeout from 3s to 30s
-- Optimized code logic
-- Added connection pooling
+- Optimized code (learned about connection pooling)
+- Added error handling
 
 **Result:** ✅ Function completing in < 5 seconds
 
@@ -272,11 +293,11 @@ Application Logs:
 📊 BEFORE → AFTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Lambda Configuration:
-❌ BEFORE: Timeout: 3 seconds
+❌ BEFORE: Timeout: 3 seconds (default)
 ✅ AFTER:  Timeout: 30 seconds
 
 CloudWatch Metrics:
-❌ BEFORE: Duration: 3000ms (timeout)
+❌ BEFORE: Duration: 3000ms (always timeout)
 ✅ AFTER:  Duration: 4200ms (success)
 
 Error Rate:
@@ -285,19 +306,24 @@ Error Rate:
 ```
 
 ![CloudWatch Monitoring Dashboard](screenshots/09_cloudwatch_monitoring_dashboard.png)
-*Figure 5: CloudWatch metrics showing Lambda function performance improvements*
+*Figure 5: CloudWatch metrics showing my Lambda function after I fixed it*
+
+**Key Learning:** Always check CloudWatch Logs first. They tell you exactly what's wrong.
 
 ---
 
 ### 4️⃣ IAM Permission Errors
 
-**Problem:** Service unable to write logs to CloudWatch  
-**Investigation:**
-- Reviewed IAM policy attached to role
-- Checked trust relationship
-- Verified CloudWatch log group exists
+**What I Learned:** IAM policies are picky about syntax
 
-**Solution:**
+**Problem I Created:** Service couldn't write logs to CloudWatch  
+**Investigation:**
+- Reviewed IAM policy (looked right to me at first)
+- Checked trust relationship (was correct)
+- Learned that resource ARNs matter
+- Finally found the issue: wrong resource format
+
+**How I Fixed It:**
 ```json
 {
   "Effect": "Allow",
@@ -316,11 +342,11 @@ Error Rate:
 📊 BEFORE → AFTER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 IAM Policy Permissions:
-❌ BEFORE: No CloudWatch Logs permissions
-✅ AFTER:  logs:CreateLogGroup, CreateLogStream, PutLogEvents
+❌ BEFORE: Missing CloudWatch Logs actions
+✅ AFTER:  All 3 required actions added
 
 CloudWatch Log Groups:
-❌ BEFORE: No logs appearing
+❌ BEFORE: No logs appearing (silent failure)
 ✅ AFTER:  Log stream active, events flowing
 
 Error Messages:
@@ -329,170 +355,107 @@ Error Messages:
 ```
 
 ![IAM Roles and Policies](screenshots/04_iam_roles_policies_setup.png)
-*Figure 6: IAM role with CloudWatch Logs permissions properly configured*
+*Figure 6: IAM role I configured after learning how CloudWatch Logs permissions work*
+
+**Key Learning:** IAM errors are frustrating but teach you to read documentation carefully.
 
 ---
 
 ### 5️⃣ GuardDuty Security Findings
 
-**Problem:** GuardDuty detected potential unauthorized access  
+**What I Learned:** How to respond to security alerts (incident response basics)
+
+**Problem I Created:** Intentionally triggered GuardDuty alerts to practice  
 **Investigation:**
-- Reviewed GuardDuty findings
-- Analyzed CloudTrail logs
-- Identified compromised access key
-- Checked affected resources
+- Reviewed GuardDuty findings dashboard
+- Checked CloudTrail logs for suspicious activity
+- Identified which access key was "compromised"
+- Learned to trace API calls back to source
 
-**Solution:**
-1. Rotated compromised IAM access keys
-2. Updated Security Group rules
-3. Enabled MFA on root account
-4. Configured GuardDuty alerts to SNS
+**How I Fixed It:**
+1. Rotated the IAM access key immediately
+2. Updated Security Group rules (too permissive)
+3. Enabled MFA on root account (should've done this first!)
+4. Configured SNS alerts for future findings
 
-**Result:** ✅ Security posture improved, threat mitigated
+**Result:** ✅ Security posture improved, practiced incident response
 
 ```
 📊 INCIDENT RESPONSE TIMELINE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Detection:
-  GuardDuty Finding: UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration
+  GuardDuty Finding: UnauthorizedAccess (simulated)
 
 Investigation (CloudTrail):
-  - Identified compromised access key
-  - Traced unauthorized API calls
-  - Confirmed affected resources
+  - Identified which access key was "compromised"
+  - Traced API calls to find affected resources
+  - Learned to read CloudTrail JSON
 
-Remediation Actions:
+Remediation Actions I Took:
   ✅ Rotated IAM access keys
-  ✅ Updated Security Group rules
-  ✅ Enabled MFA on root account
-  ✅ Configured SNS alerts for future findings
+  ✅ Tightened Security Group rules
+  ✅ Enabled MFA (finally!)
+  ✅ Set up SNS alerts for future issues
 
 Validation:
-  ✅ No further unauthorized access detected
+  ✅ No further unauthorized access
   ✅ GuardDuty findings archived
-  ✅ Monitoring alerts active
+  ✅ Monitoring now alerts me via email
 ```
 
 ![GuardDuty Dashboard](screenshots/07_guardduty_dashboard_overview.png)
-*Figure 7: GuardDuty findings and incident response workflow*
+*Figure 7: GuardDuty findings I practiced responding to*
+
+**Key Learning:** Security incidents are scary at first, but there's a methodical process to follow.
 
 ---
 
 ## 📊 Development Workflow
 
-This project follows industry-standard version control practices:
+I'm learning professional development practices too:
 
 ![Git Branch and Merge Workflow](screenshots/05_git_branch_merge_workflow.png)
-*Professional git workflow with feature branches, pull requests, and code review process*
+*Learning to use git properly: branches, commits, pull requests*
 
-### Workflow Highlights:
-- ✅ Feature branch development
-- ✅ Pull request reviews before merging
-- ✅ Automated testing on commits
-- ✅ Clean commit history with meaningful messages
-- ✅ Main branch protection (production-ready code only)
+**What I Practice:**
+- ✅ Feature branches (not committing directly to main)
+- ✅ Meaningful commit messages
+- ✅ Testing before merging
+- ✅ Keeping my repo organized
+
+**Why This Matters:** Real DevOps/SysOps jobs require good git habits.
 
 ---
 
 ## 🚀 Quick Start
 
+**Warning:** This will create AWS resources. Use Free Tier or expect small charges (~$5).
+
 ### Prerequisites
-
-![AWS Account](https://img.shields.io/badge/Required-AWS_Account-FF9900?style=flat-square&logo=amazonaws)
-![AWS CLI](https://img.shields.io/badge/Required-AWS_CLI-FF9900?style=flat-square&logo=amazonaws)
-![Terraform](https://img.shields.io/badge/Required-Terraform-7B42BC?style=flat-square&logo=terraform)
-![Python](https://img.shields.io/badge/Required-Python_3.8+-3776AB?style=flat-square&logo=python)
-
-- AWS Account (Free Tier eligible)
-- AWS CLI configured
+- AWS Account (Free Tier works)
+- AWS CLI configured with your credentials
 - Terraform installed
-- Python 3.8+
+- Basic Linux/terminal knowledge
 
-### Deploy Lab Environment
+### Deploy My Lab Environment
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/charles-bucher/AWS_Cloud_Support_Sim.git
 cd AWS_Cloud_Support_Sim
 
 # Initialize Terraform
 terraform init
 
-# Review the infrastructure plan
+# See what will be created
 terraform plan
 
-# Deploy the lab environment
+# Deploy the lab (creates real AWS resources)
 terraform apply -auto-approve
 
-# Run scenario simulations
-python3 scripts/simulate_errors.py
-
-# Clean up resources when done
+# When done, destroy to avoid charges
 terraform destroy -auto-approve
 ```
-
-### Example: Testing EC2 Scenario
-
-```bash
-# Deploy EC2 instance with misconfigured Security Group
-cd iac/
-terraform apply -target=aws_instance.test_ec2
-
-# Attempt to SSH (will fail initially)
-ssh -i key.pem ec2-user@<public-ip>
-
-# Fix Security Group via Terraform
-# Update sg_hardening.tf with correct rules
-terraform apply
-
-# Verify connectivity
-ssh -i key.pem ec2-user@<public-ip>
-# Success! ✅
-```
-
----
-
-## 📸 Infrastructure Gallery
-
-### Network Architecture
-<table>
-<tr>
-<td width="50%">
-
-![VPC Subnets & Routing](screenshots/02_vpc_subnets_routing.png)
-*VPC subnet configuration and routing tables*
-
-</td>
-<td width="50%">
-
-![Security Groups & NACLs](screenshots/03_security_groups_network_acls.png)
-*Security Groups and Network ACL configurations*
-
-</td>
-</tr>
-</table>
-
-### Storage & Monitoring
-<table>
-<tr>
-<td width="50%">
-
-![S3 Bucket Setup](screenshots/06_s3_bucket_setup.png)
-*S3 bucket creation and policy configuration*
-
-</td>
-<td width="50%">
-
-![CloudWatch Dashboard](screenshots/09_cloudwatch_monitoring_dashboard.png)
-*CloudWatch monitoring and logging dashboard*
-
-</td>
-</tr>
-</table>
-
-### DevOps Workflow
-![Git Branch & Merge Workflow](screenshots/05_git_branch_merge_workflow.png)
-*Git branch strategy and infrastructure deployment workflow*
 
 ---
 
@@ -501,95 +464,113 @@ ssh -i key.pem ec2-user@<public-ip>
 ```
 AWS_Cloud_Support_Sim/
 ├── iac/                      # Infrastructure as Code
-│   ├── main.tf              # Core Terraform configuration
-│   ├── variables.tf         # Input variables
-│   ├── outputs.tf           # Output values
-│   ├── s3_security.tf       # S3 bucket configurations
-│   └── sg_hardening.tf      # Security Group rules
-├── scenarios/                # Lab scenarios and documentation
+│   ├── main.tf              # Core Terraform config
+│   ├── variables.tf         # Variables
+│   ├── outputs.tf           # Outputs
+│   ├── s3_security.tf       # S3 configurations
+│   └── sg_hardening.tf      # Security Groups
+├── scenarios/                # Learning scenarios
 │   ├── ec2_connectivity.md
 │   ├── s3_access_denied.md
 │   ├── lambda_timeout.md
 │   ├── iam_permissions.md
 │   └── guardduty_alerts.md
 ├── scripts/                  # Automation scripts
-│   ├── simulate_errors.py   # Generate test scenarios
-│   ├── remediation.py       # Automated fixes
-│   └── monitoring_setup.py  # CloudWatch configuration
-├── tests/                    # Testing scripts
-│   └── validate_fixes.py    # Verify solutions work
+│   ├── simulate_errors.py
+│   ├── remediation.py
+│   └── monitoring_setup.py
+├── screenshots/              # Proof of work
 ├── diagrams/                 # Architecture diagrams
-│   └── architecture-overview.png
-├── screenshots/              # Scenario documentation
-│   ├── ec2-connectivity-fix.png
-│   ├── s3-access-denied-resolved.png
-│   ├── lambda-timeout-resolved.png
-│   ├── iam-permissions-fixed.png
-│   └── guardduty-incident-response.png
-├── docs/                     # Additional documentation
-│   └── troubleshooting-playbook.md
-├── README.md                 # This file
-├── LICENSE.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-└── SECURITY.md
+└── README.md                 # You are here
 ```
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies I'm Learning
 
-This project leverages modern cloud infrastructure and automation tools to simulate real-world AWS environments:
+### Cloud Platform
+![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 
-**Cloud Platform:** AWS (EC2, S3, Lambda, IAM, VPC, CloudWatch, GuardDuty)  
-**Infrastructure as Code:** Terraform  
-**Automation & Scripting:** Python 3.8+, Bash  
-**Version Control:** Git, GitHub  
-**Development Environment:** Linux (Ubuntu), VS Code
+**Services I've Used:**
+- EC2, VPC, S3, Lambda, IAM, CloudWatch, GuardDuty
 
-All resources are deployed using Infrastructure as Code principles, ensuring reproducibility and consistency across environments.
+### Infrastructure & Automation
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
----
-
-## 📚 Learning Journey
-
-This project represents my hands-on learning path in AWS Cloud Support:
-
-**Completed:**
-- ✅ AWS fundamentals (EC2, S3, IAM, Lambda)
-- ✅ Infrastructure as Code with Terraform
-- ✅ CloudWatch monitoring and log analysis
-- ✅ Security best practices (IAM, GuardDuty)
-- ✅ Troubleshooting methodology
-
-**In Progress:**
-- 🔄 AWS Certified Solutions Architect - Associate prep
-- 🔄 Advanced networking (VPC peering, Transit Gateway)
-- 🔄 Container services (ECS, EKS)
-
-**Next Steps:**
-- 📋 AWS Certified SysOps Administrator - Associate
-- 📋 Expand to multi-region architectures
-- 📋 Add CI/CD pipeline scenarios
+### Tools I Use
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ---
 
-## 🎓 Why This Project Matters
+## 📚 What I'm Currently Learning
 
-**For Hiring Managers:**
-This project demonstrates I can:
-- Troubleshoot production-like AWS issues independently
-- Follow structured incident response processes
-- Document technical solutions clearly
-- Use Infrastructure as Code for repeatable environments
-- Think like a Cloud Support Engineer
+### Active Study (January 2025)
 
-**Real-World Application:**
-These scenarios mirror actual tickets I would handle in a Cloud Support role:
-- Customer reports EC2 connectivity issues → investigate and resolve
-- Application throwing S3 errors → analyze logs and fix permissions
-- Lambda functions failing → debug and optimize
-- Security alerts from GuardDuty → respond and remediate
+**AWS Solutions Architect - Associate**
+- Studying for exam (no date scheduled yet)
+- Following Stephane Maarek's Udemy course
+- Doing hands-on labs from Tutorials Dojo
+- Building this project to reinforce learning
+
+**Next Skills:**
+- CloudFormation
+- Auto Scaling Groups and Load Balancers
+- Container basics (ECS)
+- CI/CD pipelines
+
+### Resources I Use
+
+**Free:**
+- AWS Free Tier
+- AWS Documentation
+- YouTube tutorials
+- Reddit r/AWSCertifications
+
+**Paid:**
+- Udemy courses ($10-15)
+- Tutorials Dojo practice exams ($15)
+- AWS account costs (~$20/month)
+
+---
+
+## 🎯 Career Goals (Realistic)
+
+### What I'm Looking For
+
+**Target Roles:**
+- AWS Cloud Support Associate
+- Junior SysOps Administrator
+- Cloud Operations Engineer (Entry-level)
+- Technical Support Engineer (Cloud)
+
+**Salary Goals:**
+- Year 1: $50k+ (entry-level)
+- Years 2-3: $70-90k combined household
+- Years 4-5: $100k individual
+
+**Location:**
+- Remote preferred (Florida-based)
+- Open to contract/staffing agencies
+- Will consider hybrid if Tampa Bay area
+
+### Why Hire Me?
+
+**What I Bring:**
+- ✅ Actual hands-on AWS experience (this repo proves it)
+- ✅ Self-motivated (taught myself while working full-time)
+- ✅ Documentation skills (professional docs)
+- ✅ Problem-solving mindset
+- ✅ Humble and willing to learn
+
+**What I Need:**
+- ✅ Chance to prove myself
+- ✅ Remote opportunity
+- ✅ Entry-level role
+- ✅ Company that values skills over credentials
 
 ---
 
@@ -601,39 +582,47 @@ These scenarios mirror actual tickets I would handle in a Cloud Support role:
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Charles-Bucher)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:charles.bucher.cloud@gmail.com)
 
-**Open to opportunities in:**
-- AWS Cloud Support Engineer
-- Junior SysOps Administrator
-- Cloud Operations Engineer
-- Technical Support Engineer (Cloud)
+**Status:** Open to entry-level cloud opportunities (remote preferred)
 
-### 📊 Repository Stats
-
-![GitHub last commit](https://img.shields.io/github/last-commit/charles-bucher/AWS_Cloud_Support_Sim?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/charles-bucher/AWS_Cloud_Support_Sim?style=flat-square)
-![GitHub code size](https://img.shields.io/github/languages/code-size/charles-bucher/AWS_Cloud_Support_Sim?style=flat-square)
-![Lines of code](https://img.shields.io/tokei/lines/github/charles-bucher/AWS_Cloud_Support_Sim?style=flat-square)
+**Looking For:**
+- AWS Cloud Support roles
+- Junior SysOps positions
+- Contract work through staffing agencies
+- Freelance AWS projects
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+MIT License - see [LICENSE.md](LICENSE.md)
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 The Truth
 
-- AWS Documentation for best practices
-- HashiCorp for Terraform
-- The cloud computing community for continuous learning resources
+**I'm Self-Taught:**
+- This is a learning project, not production work
+- I'm entry-level, not senior
+- I have a record from 2003 (clean since 2008)
+- I'm 40 with three kids, no time for BS
+
+**But Here's What's Real:**
+- Every screenshot is from MY AWS account
+- I spent MY money learning
+- I built this after MY delivery shifts
+- This is MY actual learning journey
+
+**Bottom Line:** I can't fake experience, so I'm building proof.
 
 ---
 
 <div align="center">
 
-**⭐ If you find this project helpful, please consider giving it a star!**
+**⭐ If you find this helpful, please star this repo**
 
-Made with ☕ and determination by Charles Bucher
+Built with ☕ and determination
+
+**Charles Bucher**  
+*Self-Taught Cloud Engineer*
 
 </div>
